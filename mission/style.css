@@ -52,7 +52,7 @@ p {
 #main-text {
     grid-column: 2;
     justify-self: center;
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 ol {
     grid-column: 2;
