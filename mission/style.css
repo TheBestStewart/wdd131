@@ -5,7 +5,7 @@
     color: white;
 }
 .dark-back {
-    background-color: black;
+    background-color: rgb(46, 46, 46);
 }
 button {
     margin-top: 1em;
