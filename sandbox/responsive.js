@@ -37,7 +37,13 @@ function toggleMenu(){
     });
 }
 
+function toggleBar() {
+    const bars = document.querySelector(".menu-btn");
+    bars.classList.toggle("change");
+}
+
 document.querySelector(".menu-btn").addEventListener("click", toggleMenu);
+document.querySelector(".menu-btn").addEventListener("click", toggleBar);
 
 addIndex();
 displayWelcome();
