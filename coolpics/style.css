@@ -1,12 +1,12 @@
 * {
     margin: 0;
     font-family:'Courier New', Courier, monospace;
+    text-align: center;
 }
 .menu-btn {
     cursor: pointer;
     border: none;
     background-color: transparent;
-    margin-left: 1em;
 }
 .bar1, .bar2, .bar3 {
     width: 30px;
@@ -22,10 +22,15 @@ img {
 }
 h1 {
     font-size: 1.8em;
-    text-align: center;
 }
 h2 {
     margin-bottom: 1em;
+}
+h3 {
+    color: white;
+    font-size: 1.5em;
+}
+button {
     text-align: center;
 }
 main {
@@ -45,12 +50,13 @@ footer {
 }
 nav {
     margin-top: 1em;
-    margin-left: 1em;
 }
 nav a {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     display: flex;
+    flex-direction: column;
+    margin: 0.25em;
 }
 .hidden {
     display: none;
@@ -61,12 +67,32 @@ nav a {
     align-items: center;
     gap: 1em;
 }
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
+}
 @media screen and (min-width: 700px) {
     #pics {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         align-items: center;
+    }
+    nav a {
+        font-size: 1.2em;
     }
 }
 @media screen and (min-width: 1000px) {
@@ -77,13 +103,26 @@ nav a {
         display: none;
     }
     .hidden {
-        display: inline;
-    }
-    nav {
-        display: block;
-        text-align: center;
+        display: inline-block;
     }
     nav a {
         margin: 0.5em;
+        display: inline-block;
+        font-size: 1.5em;
+    }
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
     }
 }
