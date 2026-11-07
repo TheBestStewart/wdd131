@@ -1,0 +1,100 @@
+* {
+    margin: 0 5px;
+}
+body {
+    background-color:rgb(170, 203, 231);
+}
+#content {
+    margin: 2em 10em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 15px;
+}
+#form {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1 {
+    margin-bottom: 0.5em;
+}
+.show {
+    display:block !important;
+}
+#first {
+    grid-area: 2/1/3/2;
+    margin-bottom: 0.5em;
+}
+#last {
+    grid-area: 2/2/3/3;
+    margin-bottom: 0.5em;
+    height: 2em;
+}
+#emailhead {
+    grid-area: 3/1/4/3;
+}
+#email {
+    grid-area: 4/1/5/3;
+    margin-bottom: 0.5em;
+    height: 2em;
+}
+#typehead {
+    grid-area: 5/1/6/2;
+}
+#type {
+    grid-area: 6/1/7/2;
+    margin-bottom: 1.5em;
+    background-color:white;
+    border: 1px solid rgb(147, 145, 145);
+    border-radius: 4px;
+}
+#date {
+    grid-area: 6/2/7/3;
+    margin-bottom: 1.5em;
+    height: 2em;
+}
+#datehead {
+    grid-area: 5/2/6/3;
+}
+#id {
+    display:none;
+    grid-area: 8/1/9/3;
+    height: 2em;
+    margin-bottom: 1.5em;
+    margin-top: -0.2em;
+}
+#idhead {
+    display:none;
+    grid-area: 7/1/8/3;
+    margin-top: -0.2em;
+}
+#code {
+    display:none;
+    grid-area: 8/1/9/3;
+    height: 2em;
+    margin-bottom: 1.5em;
+    margin-top: -0.2em;
+}
+#codehead {
+    display:none;
+    grid-area: 7/1/8/3;
+    margin-top: -0.2em;
+}
+#submit {
+    grid-area: 9/1/10/3;
+    background-color: rgb(170, 203, 231);
+    border: 2px solid rgb(87, 86, 86);
+    height: 2.5em;
+}
+#errors {
+    grid-area: 10/1/11/13;
+}
+#ticket {
+    white-space: pre-line;
+    grid-area: 10/1/11/3;
+}
+#ticket h2 {
+    margin: 0.5em 0;
+}
+#ticket p {
+    margin: 0.7em 0;
+}
