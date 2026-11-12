@@ -19,7 +19,6 @@ list-style-type: none;
 display: flex;
 justify-content: flex-end;
 gap: 1em;
-margin-right: 1em;
 }
 
 hr{
@@ -38,12 +37,20 @@ width: 100%;
     flex-wrap: wrap;
 }
 
+h3 {
+    margin: 0;
+}
+
+p {
+    margin-top: 0.5em;
+}
+
 .media-card {
     display: flex;
     flex-direction: column;
 }
               
-@media (min-width:600px) {
+@media (min-width:700px) {
     .media-card {
         flex-direction: row;
         gap: 1em;
@@ -52,7 +59,24 @@ width: 100%;
     .gallery {
         flex-direction: row;
     }
+    .gallery h3 {
+        font-size: 0.85em;
+    }
+    .gallery p {
+        font-size: 0.75em;
+    }
     .media-card-container .media-card {
         width: 100%;
+    }
+    .main-nav {
+        margin-right: 3em;
+    }
+}
+@media (min-width:900px) {
+    .gallery h3 {
+        font-size: 1em;
+    }
+    .gallery p {
+        font-size: 0.9em;
     }
 }
