@@ -80,7 +80,10 @@ const anotherSort = simpleList.sort(compareFn)
 console.log("function", simpleList);
 function searchList(list, q) {
     function searchCallback(hike) {
-        return hike.name.toLowerCase().includes(q.toLowerCase()) || hike.description.toLowerCase().includes(q.toLowerCase()) || hike.tags.some(tag => tag.toLowerCase().includes(q.toLowerCase()));
+        return (hike.name.toLowerCase().includes(q.toLowerCase()) 
+        || hike.description.toLowerCase().includes(q.toLowerCase()) 
+        || hike.tags.some(tag => tag.toLowerCase().includes(q.toLowerCase()))
+        );
     }
     const filteredList = list.filter(searchCallback);
     return filteredList;

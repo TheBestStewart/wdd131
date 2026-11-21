@@ -1,6 +1,7 @@
 main {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
 }
 .social img {
     width: 40px;
@@ -29,12 +30,14 @@ h1 {
 }
 .search-bar {
     display: flex;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     height: 30px;
+    width: 100%;
 }
 main > hr {
     width: 100%;
+    max-width: 700px;
 }
 .search-bar form {
     width: 100%;
@@ -70,7 +73,7 @@ h2 {
     color:cornflowerblue;
 }
 .recipe {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -99,13 +102,35 @@ footer {
     gap: 0.25em;
     margin: 1em;
 }
-.icon-star-empty {
+.rating {
     font-size: 1.5em;
     position: relative;
     top: 0.14em;
+    color:goldenrod;
 }
 .recipe span {
     height: 150px;
+}
+.search-bar img:hover {
+    cursor:pointer;
+}
+.search-bar img:active {
+    transform: scale(0.9);
+}
+.tags {
+    display: flex;
+    gap: 3px;
+}
+@media (min-width: 500px) {
+    .recipe img {
+        margin: 1.5em;
+        max-width: calc(100% - 3em);
+        margin-bottom: 0;
+    }
+    .details {
+        margin-left: 1.5em;
+        margin-bottom: 1.5em;
+    }
 }
 @media (min-width: 700px) {
     h1 {
@@ -113,6 +138,7 @@ footer {
     }
     .search-bar {
         height: 40px;
+        max-width: 800px;
     }
     .search-bar img {
         width: 35px;
@@ -120,13 +146,19 @@ footer {
     .recipe {
         flex-direction: row;
         justify-content: flex-start;
+        max-width: 800px;
+    }
+    main hr {
+        max-width: 800px;
     }
     .recipe img {
-        width: 50%;
         margin: 1em;
+        height: 300px;
+        width: 300px;
     }
     .details {
         margin: 1em;
+        margin-left: 0;
     }
     .description {
         display:block;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <!-- Open Graph (Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Your Title">
@@ -35,23 +36,21 @@
                 <input type="text" id="search" placeholder="Find a recipe">
             </form>
             <hr>
-            <img src="images/search.svg" alt="search icon">
+            <img src="images/search.svg" alt="search icon" id="icon">
         </div>
         <hr>
-        <section class="recipe">
-            <img src="images/apple-crisp.jpg" alt="apple crisp image">
-            <div class="details">
-                <p class="tag">dessert</p>
-                <h2>Apple Crisp</h2>
-                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-            </div>
+        <section id="recipe-list">
+            <article class="recipe">
+                <img src="images/apple-crisp.jpg" alt="apple crisp image">
+                <section class="details">
+                    <p class="tag">dessert</p>
+                    <h2>Apple Crisp</h2>
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        ★★★★☆
+                    </span>
+                    <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
+                </section>
+            </article>
         </section>
     </main>
     <footer>
