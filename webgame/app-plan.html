@@ -72,9 +72,12 @@
 			<h3>Pseudocode for your project</h3>
 
 			<p>
-				Arrays to keep track of stat blocks, functions to alter displayed information. Stat blocks for
-                weapons, armor, and enemies. Functions for attacks (both player and enemy), leveling up, and click
-                events for tabs. Array for keeping track of quest progress.
+				Stat blocks for weapons, armor, and enemies stored in arrays. Quest progress for
+                quests stored in arrays. Functions created for attacks (both player and enemy), leveling up, 
+                and click events for tabs. Attacks work by calculating attack_stat + rand - defense_stat.
+                Leveling up works on an experience system, with experience being calculated off of enemy
+                stats. Experience needed for the next level is calculated using experience_needed * 1.1.
+                Click events will be used to display the many separate tabs.
 			</p>
 
 			<h3>Wireframes</h3>
@@ -87,7 +90,8 @@
                 on how to interact with the game. The inventory tab is for items that the
                 player has picked up. The logs tab is for information not otherwise listed
                 in the output. The output is a log of actions the player (or monsters) have
-                taken. 
+                taken. The desktop site will be a wider version of the same pages.
+                All of the tabs will have logo images.
 			</p>
 			<img src="images/wireframe.jpeg" alt="home page wireframe" class="wireframe"/>
 		</main>
